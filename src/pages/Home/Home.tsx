@@ -1,10 +1,14 @@
 import React from "react";
 import PupilsSelector from "../../components/PupilsSelector/PupilsSelector";
 import styles from "./Home.module.scss";
+import Helmet from 'react-helmet';
 
 const Home: React.FC = () => {
   return (
     <>
+    <Helmet>
+      <title>My Class</title>
+    </Helmet>
       <div className={styles["home"]}>
         <div className={`font--semi-bold ${styles["proposal"]}`}>
           Hello,

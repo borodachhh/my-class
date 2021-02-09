@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import PupilOverview from "./pages/PupilOverview/PupilOverview";
 
-
 function App() {
   return (
     <div className="App">

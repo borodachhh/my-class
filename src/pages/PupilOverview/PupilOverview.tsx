@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import PupilsSelector from "../../components/PupilsSelector/PupilsSelector";
@@ -11,6 +12,9 @@ const PupilOverview: React.FC = () => {
 
   return (
     <>
+    <Helmet>
+      <title>{pupil.name}</title>
+    </Helmet>
       <div className={styles["pupil-overview"]}>
         <div className={styles["header"]}>
           <h1 className={styles["header__heading"]}>Overview</h1>
