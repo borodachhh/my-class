@@ -1,0 +1,115 @@
+.pupil-overview {
+  padding: 0 2rem;
+  background-color: var(--color-bg-light-blue);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  :not(:last-child) {
+    margin-right: 2rem;
+  }
+  .header__heading {
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .header__select {
+    width: 20%;
+  }
+  .header__back-link {
+    font-weight: 500;
+    color: var(--color-dark-blue);
+  }
+  
+}
+
+.info-card {
+  width: min-content;
+  .passport {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .passport__info {
+    margin-right: 3em;
+    width: max-content;
+    *:not(:last-child) {
+      margin-bottom: 0.5em;
+    }
+  }
+  .passport__name {
+    color: var(--color-dark);
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .passport__email {
+    color: var(--color-grey);
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .passport__grade {
+    color: var(--color-light-grey);
+    font-size: 0.7em;
+    font-weight: 500;
+  }
+  
+  .passport__avatar-wrap {
+    height: 7em;
+    width: 7em;
+    background-color: var(--color-bg-light-blue);
+    border-radius: 100vmax;
+    overflow: hidden;
+  }
+
+  .passport__avatar {
+    height: 100%;
+  }
+}
+
+.body {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.grades-table {
+  abbr {
+    text-decoration: none;
+  }
+  .grades-table__header {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .grades-table__heading {
+    color: var(--color-dark);
+    text-align: center;
+    font-weight: 600;
+  }
+  .grades-table__table {
+    font-weight: 500;
+    color: var(--color-light-grey);
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      border: 0.15rem solid var(--color-very-light-grey);
+      padding: 0.5em;
+      vertical-align: middle;
+      text-align: center;
+      font-weight: inherit;
+    }
+  }
+}
+
+.description {
+  margin-top: 1em;
+  color: var(--color-dark);
+  .description__heading {
+    font-weight: 500;
+    margin-bottom: 0.8em;
+  }
+}

@@ -1,0 +1,32 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #F5F9FF;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.proposal {
+  color: #11142D;
+  font-size: 1.5em;
+}
+
+.select {
+  width: 20%;
+}
+
+.watermark {
+  width: 100%;
+  padding: 1em;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: 400;
+  background-color: #000;
+  color: #fff;
+  span {
+    font-weight: 500;
+  }
+}
